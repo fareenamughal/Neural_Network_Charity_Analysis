@@ -13,7 +13,7 @@ The aim of the analysis was to determine whether the applicants will be successf
 
 ## Results
 
-### [Images of the various optimazation results]
+### [Images of the various optimazation results](https://github.com/fareenamughal/Neural_Network_Charity_Analysis/tree/main/Resources)
 
 ### Preprocessing of Data
 - The EIN and NAME columns which are identifiers have been removed
