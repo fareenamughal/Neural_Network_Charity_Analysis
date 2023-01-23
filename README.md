@@ -9,24 +9,45 @@ The aim of the analysis was to determine whether the applicants will be successf
 
   - Datasource: [charity_data.csv](https://raw.githubusercontent.com/fareenamughal/Neural_Network_Charity_Analysis/main/Starter_Code/charity_data.csv)
   
+  - Software: Python 3.9.15, Anaconda and Jupyter Notebook
+
+## Results
+
+### [Images of the various optimazation results]
+
+### Preprocessing of Data
+- The EIN and NAME columns which are identifiers have been removed
+- The features of the model are included as part of the columns listed below and the unique number of unique values in   each columm is also indicated
+    - APPLICATION_TYPE            17
+    - AFFILIATION                  6
+    - CLASSIFICATION              71
+    - USE_CASE                     5
+    - ORGANIZATION                 4
+    - STATUS                       2
+    - INCOME_AMT                   9
+    - SPECIAL_CONSIDERATIONS       2
+    - ASK_AMT                   8747
+    - IS_SUCCESSFUL               2
+  
+  - The target is the column - IS_SUCCESSFUL. This has the results which holds whether the findomh was used effectively. The results are indicated as a yes or no denoted by 1 or O.
+
+### Compiling, Training and Evaluating the Model
+1. Different options of hidden layers have been tested as well as number of nuerons
+    - The model that gave the best results had 3 hidden layers with 90 and 30 neurons respectively.
+2. Various activation functions were used including Tanh, ReLu and Sigmoid. 
+    - The model with the best result used ReLu and Sigmoid activation 
+3. Number of parameters tested for the model with the best results was 6,811
+4. The efficiency of the model remained below 75%, if the callback function was applied this may have been achieved(tensorflow errors prevented me from trying this). To try and increase the results was difficult as I had already achieved the best result with my first try which resulted in a 72.29% efficiency.
+5. So as to try and optimize the accuracy, I tried to change the following:
+    - activation functions - this being a binary model worked best with ReLu and Sigmoid activation
+    - number of hidden layers - the model worked with 2 hidden layer and the change to 5 or 3 hidden layers did not     
+    - materially improve the results 
+    - Epoch size - increasing this resulted in larger number of records but also increased processing time. 
+    - The type of model used - Random classifier, also resulted in very similar results.  
+
+## Recommendation
 
 
-Deliverable 4: A Written Report on the Neural Network Model (30 points)
-You will earn a perfect score for Deliverable 4 by completing all requirements below:
-
-Structure, Organization, and Formatting
-The written analysis has the following structure, organization, and formatting:
-
-There is a title, and there are multiple sections (2 pt)
-Each section has a heading and subheading (2 pt)
-Links to images are working, and code is formatted and displayed correctly (2 pt).
-Analysis
-The written analysis has the following:
-
-Overview of the loan prediction risk analysis:
-
-The purpose of this analysis is well defined (4 pt)
-Results:
 
 There is a bulleted list that answers all six questions (15 pt)
 Summary:
