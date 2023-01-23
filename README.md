@@ -37,7 +37,7 @@ The aim of the analysis was to determine whether the applicants will be successf
 2. Various activation functions were used including Tanh, ReLu and Sigmoid. 
     - The model with the best result used ReLu and Sigmoid activation 
 3. Number of parameters tested for the model with the best results was 6,811
-4. The efficiency of the model remained below 75%, if the callback function was applied this may have been achieved(tensorflow errors prevented me from trying this). To try and increase the results was difficult as I had already achieved the best result with my first try which resulted in a 72.29% efficiency.
+4. The efficiency of the model remained below 75%, if the callback function was applied this may have been achieved(tensorflow errors prevented me from trying this). To try and increase the results was difficult as I had already achieved the best result with my first try which resulted in a 72.6% efficiency. The range remained between 72.3% to 72.6%.
 5. So as to try and optimize the accuracy, I tried to change the following:
     - activation functions - this being a binary model worked best with ReLu and Sigmoid activation
     - number of hidden layers - the model worked with 2 hidden layer and the change to 5 or 3 hidden layers did not     
@@ -46,11 +46,5 @@ The aim of the analysis was to determine whether the applicants will be successf
     - The type of model used - Random classifier, also resulted in very similar results.  
 
 ## Recommendation
+Thought I did manage to optimize the model to achieve 75% accuracy, in my view this target is quite low. Since this is a binary classification, an model such as a Random Forest Classifier or other Machine Learning Models would greatly improve the results if combined with Deep Learning Model. 
 
-
-
-There is a bulleted list that answers all six questions (15 pt)
-Summary:
-
-There is a summary of the results (2 pt)
-There is a recommendation on using a different model to solve the classification problem, and justification (3 pt)
